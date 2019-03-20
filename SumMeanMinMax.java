@@ -1,4 +1,4 @@
-package structures;
+
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class SumMeanMinMax {
 		int Max = 0;
 		int Min = 0;
 		int Sum = 0;
-		int Mean = 0;
+		double Mean = 0;
 
 		System.out.println("Inter Your Numbers");
 		Scanner scan = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class SumMeanMinMax {
 		if (a>b && a>c){
 			Max = a;
 		}
-		else if (b>a){
+		else if (b>a){ //What about c?
 			Max = b;
 		}
 		else if (c>b){
@@ -37,7 +37,7 @@ public class SumMeanMinMax {
 		if (a<b && a<c){
 			Min = a;
 		}
-		else if (b<a){
+		else if (b<a){ //What about c?
 			Min = b;
 		}
 		else if (c<b){
@@ -48,11 +48,11 @@ public class SumMeanMinMax {
 		Sum = a+b+c;
 		
 		//mean----------------------------------------------------------------------
-		Mean = a+b+c/3;	
+		Mean = (a+b+c)/3;	
 		
 		
 		
-		System.out.println("Sum is : " + Mean +"    "+"Sum is : " + Sum+"   "+"Max is : " + Max+"   "+"Max is : " + Min);
+		System.out.println("Mean is : " + Mean +"    "+"Sum is : " + Sum+"   "+"Max is : " + Max+"   "+"Min is : " + Min);
 		
 			
 			
